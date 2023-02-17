@@ -16,3 +16,7 @@
   * Video: (2:20) [TypeScript in 100 Seconds](https://www.youtube.com/watch?v=zQnBQ4tB3ZA&ab_channel=Fireship)
 * **11:15 am** Reading through TypeScript tutorials, taking notes
   * [TypeScript for JS Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+  * [TypeScript with React](https://www.typescriptlang.org/docs/handbook/react.html)
+  *[Create React App: TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+* **11:50 am** Start Fireship video on JavaScript Frameworks
+  * [I built the same app 10 times // Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE&ab_channel=Fireship)
