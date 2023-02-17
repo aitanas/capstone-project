@@ -21,4 +21,7 @@
 * **11:50 am** Start Fireship video on JavaScript Frameworks
   * [I built the same app 10 times // Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE&ab_channel=Fireship)
 
+---
+
 * **2:00 pm** Begin Next.js [tutorial](https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website)
+* **2:50 pm** Still going through Next.js tutorial
