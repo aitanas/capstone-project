@@ -20,3 +20,5 @@
   *[Create React App: TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 * **11:50 am** Start Fireship video on JavaScript Frameworks
   * [I built the same app 10 times // Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE&ab_channel=Fireship)
+
+* **2:00 pm** Begin Next.js [tutorial](https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website)
