@@ -6,11 +6,17 @@
 
 ## Project's Purpose or Goal: (What will it do for users?)
 
-*Lookat* will serve as a portfolio for Natalie Shough, a graphic designer and illustrator.
+*Lookat* will serve as a portfolio for graphic designer and illustrator Natalie Shough.
 
 ## List the absolute minimum features the project requires to meet this purpose or goal:
 
-* 
+The website should have the following features:
+* Splash page with links to portfolio, products, and about section
+
+#### About
+* Blurb about the designer
+* Links to relevant social media sites
+* Contact form on site
 
 What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
