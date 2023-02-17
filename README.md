@@ -25,3 +25,5 @@
 
 * **2:00 pm** Begin Next.js [tutorial](https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website)
 * **2:50 pm** Still going through Next.js tutorial
+* **3:54 pm** Finish Next.js foundations tutorial. Start going through React reading
+  * *NTS: Check out the [Next.js app tutorial](https://nextjs.org/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website) after more React foundations*
