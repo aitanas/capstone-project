@@ -12,3 +12,4 @@
   * **Gatsby + Shopify**
 * **9:20** Stripe API research
   * Video (23:04): [How To Accept Payments With Stripe](https://www.youtube.com/watch?v=1r-F3FIONl8&ab_channel=WebDevSimplified)
+* **10:38** Playing with [Typescript](https://www.typescriptlang.org/play)
