@@ -2,17 +2,17 @@
 
 ### Name of Student: Aitana Shough
 
-### Name of Project: Lookat
+### Name of Project: Natalie Shough / 
 
 ### Project's Purpose or Goal: 
 
 *Lookat* will serve as a portfolio and online store for graphic designer and illustrator Natalie Shough.
 
-### List the absolute minimum features the project requires to meet this purpose or goal:
+### Absolute minimum features the project requires to meet this goal:
 
 #### The website should have the following features:
-* Splash page with links to **portfolio**, **products**, and **about** sections.
-Each section will be broken out as follows:
+
+Styled splash page with links to **Portfolio**, **Products**, and **About** sections. Each section will be broken out as follows:
 
 #### About
 * Blurb about the brand, Lookat
@@ -27,17 +27,17 @@ Each section will be broken out as follows:
 #### Products
 * List of products
 * Detail page for each product (Read)
-* Full CRUD functionality (Create, Read, Update, Delete)
+* Read functionality (Detail for each product)
 
 
-### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+#### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
 * React
 * JavaScript / JSX
 * TypeScript
 * Next.js
 
-### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+#### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 
 #### Overall
 * Utilize Tailwind CSS for site styling
@@ -45,14 +45,19 @@ Each section will be broken out as follows:
 * Ensure site adheres to [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) guidelines
 
 #### Portfolio
+
 * Add responsive JavaScript and CSS to spruce up portfolio works with content details appearing on hover, etc.
+* Add CRUD functionality for portfolio works
 
 #### Products
+
+* Full CRUD functionality
 * Add authorization and authentication: only authenticated users may utilize Create, Update, and Delete functionality
 * Add Stripe API functionality to allow users to purchase products directly from the website
 * Add a NoSQL database to store products and sales information
 
 #### Styling Inspiration
+
 * [Montelupo](https://www.montelupo.co/)
 
 ### What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
