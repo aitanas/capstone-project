@@ -1,12 +1,14 @@
+![Lookat logo](Lookat-logo-03.svg)
+
 # Capstone Proposal
 
 ### Name of Student: Aitana Shough
 
-### Name of Project: Natalie Shough / 
+### Name of Project: Natalie Shough / Lookat
 
 ### Project's Purpose or Goal: 
 
-*Lookat* will serve as a portfolio and online store for graphic designer and illustrator Natalie Shough.
+A React website serving as a portfolio and online store for graphic designer and illustrator Natalie Shough and her personal brand, Lookat.
 
 ### Absolute minimum features the project requires to meet this goal:
 
@@ -67,3 +69,5 @@ Styled splash page with links to **Portfolio**, **Products**, and **About** sect
 * Firebase
 
 ### Is there anything else you'd like your instructor to know?
+
+N/A
