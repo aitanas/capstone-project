@@ -1,3 +1,9 @@
+![Lookat logo](Lookat-logo-03.svg)
+
+## Capstone Project: Design Portfolio and Store
+
+React website serving as a portfolio and online store for graphic designer and illustrator Natalie Shough and her personal brand, Lookat.
+
 ## Research & Planning Log
 ### Friday, 02/17
 * **8:15 am** begin filling out capstone proposal
@@ -27,3 +33,4 @@
 * **2:50 pm** Still going through Next.js tutorial
 * **3:54 pm** Finish Next.js foundations tutorial. Start going through LHTP React with NoSQL reading
   * *NTS: Check out the [Next.js app tutorial](https://nextjs.org/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website) after more React foundations*
+* **4:40 pm** Read about different built-in hooks in [React Docs](https://beta.reactjs.org/reference/react)
