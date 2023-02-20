@@ -28,7 +28,6 @@ Styled splash page with links to **Portfolio**, **Products**, and **About** sect
 
 #### Products
 * List of products
-* Detail page for each product (Read)
 * Read functionality (Detail for each product)
 
 
