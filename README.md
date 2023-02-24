@@ -41,3 +41,6 @@ React website serving as a portfolio and online store for graphic designer and i
 
 ### Friday, 02/24
 **8:05 am** Begin mapping out component diagrams and rough project structure on Figma
+**9:10 am** Continuing work on Figma, and gathering inspo for portfolio portion
+* https://www.jeremiahshoaf.com/
+* https://www.typewolf.com/
