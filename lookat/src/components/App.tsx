@@ -1,6 +1,6 @@
-import Layout from '../components/Layout';
-import About from '../pages/About';
-import Portfolio from '../pages/Portfolio';
+import Layout from '../pages/Layout';
+import About from '../pages/about';
+import Portfolio from '../pages/portfolio';
 import Control from '../components/Control';
 
 import ProductList from './products/ProductList';
