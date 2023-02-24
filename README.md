@@ -48,7 +48,8 @@ React website serving as a portfolio and online store for graphic designer and i
   * https://www.typewolf.com/
 
 * **10:15 am** Finish up basic component diagram
-
+* **10:30 am** Build out basic project structure with Next.js
+* **11:00 am** Watching [video about custom hooks](https://www.youtube.com/watch?v=6ThXsUwLWvc&ab_channel=WebDevSimplified)
 
 ## Component Diagram
 ![Component diagram](/component-diagram.png)
