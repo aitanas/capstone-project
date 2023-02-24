@@ -1,12 +1,10 @@
-import { Inter } from 'next/font/google';
-import Layout from './Layout';
-import App from '../components/App';
-import Link from 'next/link';
+import Layout from '../components/Layout';
 import type { ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
+import Home from '@/components/Home';
 
 const Page: NextPageWithLayout = () => {
-  return <p>hello world</p>
+  return <Home />
 }
 
 Page.getLayout = function getLayout(page: ReactElement) {
