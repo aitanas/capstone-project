@@ -1,6 +1,10 @@
 {
   "/_app": "pages/_app.js",
+  "/portfolio": "pages/portfolio.html",
+  "/about": "pages/about.html",
+  "/": "pages/index.html",
+  "/products": "pages/products.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
