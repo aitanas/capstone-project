@@ -1,4 +1,4 @@
-![Lookat logo](Lookat-logo-03.svg)
+![Lookat logo](img/Lookat-logo-03.svg)
 
 # Capstone Proposal
 
