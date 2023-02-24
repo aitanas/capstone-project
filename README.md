@@ -31,7 +31,7 @@ React website serving as a portfolio and online store for graphic designer and i
   * [I built the same app 10 times // Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE&ab_channel=Fireship)
     * Interested in Next.js for React
 
----
+> Lunch
 
 * **2:00 pm** Begin Next.js [tutorial](https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website)
 * **2:50 pm** Still going through Next.js tutorial
@@ -39,12 +39,16 @@ React website serving as a portfolio and online store for graphic designer and i
   * *NTS: Check out the [Next.js app tutorial](https://nextjs.org/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website) after more React foundations*
 * **4:40 pm** Reading about different built-in hooks in [React Docs](https://beta.reactjs.org/reference/react)
 
+----
 ### Friday, 02/24
-**8:05 am** Begin mapping out component diagrams and rough project structure on Figma
-**9:10 am** Continuing work on Figma, and gathering inspo for portfolio portion
-* https://www.jeremiahshoaf.com/
-* https://www.typewolf.com/
-**10:15 am** Finish up basic component diagram
+* **8:05 am** Begin mapping out component diagrams and rough project structure on Figma
+
+* **9:10 am** Continuing work on Figma, and gathering inspo for portfolio portion
+  * https://www.jeremiahshoaf.com/
+  * https://www.typewolf.com/
+
+* **10:15 am** Finish up basic component diagram
+
 
 ## Component Diagram
-![Compoent diagram](/component-diagram.png)
+![Component diagram](/component-diagram.png)
