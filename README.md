@@ -44,3 +44,7 @@ React website serving as a portfolio and online store for graphic designer and i
 **9:10 am** Continuing work on Figma, and gathering inspo for portfolio portion
 * https://www.jeremiahshoaf.com/
 * https://www.typewolf.com/
+**10:15 am** Finish up basic component diagram
+
+## Component Diagram
+![Compoent diagram](/component-diagram.png)
