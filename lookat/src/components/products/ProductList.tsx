@@ -1,5 +1,22 @@
-export default function ProductList() {
+import Products from "../../pages/products";
+
+export default function ProductList(props) {
+
+  type props = {
+    productList: Array<object>;
+  }
+
   return (
-    <p>ProductList component</p>
+    <>
+    {props.productList.map((product) => {
+      <Products
+        name={product.name}
+        img={product.img}
+        description={product.description}
+        id={product.id}
+        key={product.id}
+        />
+    })}
+    </>
   )
 }

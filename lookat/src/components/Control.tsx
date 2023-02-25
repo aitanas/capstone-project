@@ -14,6 +14,7 @@ import {
 export default function Control() {
 
   const [products, setProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const getProducts = async () => {
     let array = [];
@@ -29,7 +30,13 @@ export default function Control() {
   }, []);
 
 
+  <>
+  <ProductDetail product = {selectedProduct} />
+  <ProductList productList={products} />
+  </>
+
   return (
+
     <p>Control component</p>
   )
 }
