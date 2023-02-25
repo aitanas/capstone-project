@@ -8,7 +8,7 @@ export default function ProductList(props) {
 
   return (
     <>
-    {props.productList.map((product) => {
+    {/* {props.productList.map((product) => {
       <Products
         name={product.name}
         img={product.img}
@@ -16,7 +16,7 @@ export default function ProductList(props) {
         id={product.id}
         key={product.id}
         />
-    })}
+    })} */}
     </>
   )
 }

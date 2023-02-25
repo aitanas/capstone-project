@@ -14,19 +14,20 @@ export default function Products() {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const getProducts = async () => {
-    let array = [];
-    const collectionArray = await getDocs(collection(db, "products"));
-    collectionArray.forEach((doc) => {
-      array.push({...doc.data(), id: doc.id});
-    });
-    console.log(collectionArray);
-    setProducts(array);
-  }
+  // const getProducts = async () => {
+  //   let array = [];
+  //   const collectionArray = await getDocs(collection(db, "products"));
+  //   collectionArray.forEach((doc) => {
+  //     array.push({...doc.data(), id: doc.id});
+  //   });
+  //   console.log(collectionArray);
+  //   setProducts(array);
+  //   console.log(array);
+  // }
 
-  useEffect(() => {
-    getProducts();
-  }, []);
+  // useEffect(() => {
+  //   getProducts();
+  // }, []);
 
   // type props = {
   //   name: string;
@@ -35,6 +36,12 @@ export default function Products() {
   //   description: string;
   //   id: string;
   // };
+
+  // const querySnapshot = await getDocs(collection(db, "users"));
+  // querySnapshot.forEach((doc) => {
+  //   console.log(`${doc.id} => ${doc.data()}`);
+  // });
+
 
   return (
     <>
