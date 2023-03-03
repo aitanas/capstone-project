@@ -22,6 +22,7 @@ export default function Products() {
     collectionArray.forEach((doc) => {
       products.push({... doc.data(), id: doc.id});
     });
+    console.log(collectionArray);
     setProducts(products);
     console.log(products);
   }
