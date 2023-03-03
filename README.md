@@ -52,6 +52,9 @@ React website serving as a portfolio and online store for graphic designer and i
 * **11:00 am** Watching [video about custom hooks](https://www.youtube.com/watch?v=6ThXsUwLWvc&ab_channel=WebDevSimplified)
 * **3:00 pm** Finish basic site page mockups on Figma
 
+## Friday, 03/03
+* **9:15 am** Learning about state in Next.js; reading [this article](https://blog.logrocket.com/guide-state-management-next-js/)
+
 ## Component Diagram
 ![Component diagram](/img/component-diagram.png)
 
