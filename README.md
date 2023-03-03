@@ -54,6 +54,7 @@ React website serving as a portfolio and online store for graphic designer and i
 
 ## Friday, 03/03
 * **9:15 am** Learning about state in Next.js; reading [this article](https://blog.logrocket.com/guide-state-management-next-js/)
+* **9:50 am** Jumping around [this video](https://www.youtube.com/watch?v=6aP9nyTcd44&ab_channel=SonnySangha) to review Next.js concepts
 
 ## Component Diagram
 ![Component diagram](/img/component-diagram.png)
