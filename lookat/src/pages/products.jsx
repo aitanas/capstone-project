@@ -1,49 +1,65 @@
+'use client';
+
 import React, { useEffect, useState } from "react";
-import db from '../firebase';
-import {   
-  collection,
-  // query,
-  // addDoc,
-  // onSnapshot,
-  // doc,
-  // updateDoc,
-  getDocs,
-  onSnapshot, } from "firebase/firestore";
-  import Product from './Product';
+import db from './../firebase.js';
+import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc, getDocs }  from "firebase/firestore";
+import { useFirestore, useFirestoreCollectionData } from 'reactfire';
 
-export default function Products() {
 
-  const [products, setProducts] = useState([]);
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
+
+function Products() {
+
+  const [productList, setProductList] = useState([]);
   // const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const getProducts = async () => {
-    let products = [];
-    const collectionArray = await getDocs(collection(db, "products"));
-    collectionArray.forEach((doc) => {
-      products.push({... doc.data(), id: doc.id});
-    });
-    console.log(collectionArray);
-    setProducts(products);
-    console.log(products);
-  }
+    // reactfire function to get our firestore instance
+    const firestore = useFirestore();
+    const testCollection = collection(firestore, 'test');
 
-  useEffect(() => {
-    getProducts();
-  }, []);
+    // use reactfire hook useFirestoreCollectionData to get our collection and deconstruct into data variable
+    const { status, data } = useFirestoreCollectionData(testCollection, { idField: 'id' });
+
+    if (status === 'loading') {
+      return <p>Loading...</p>;
+    }
+
+    console.log(data);
+
+
+  // const getProducts = async () => {
+  //   let products = [];
+  //   const collectionArray = await getDocs(collection(db, "test"));
+    
+  //   console.log(collectionArray);
+  //   collectionArray.forEach((doc) => {
+  //     // console.log(doc.id, " => ", doc.data());
+  //     products.push({... doc.data(), id: doc.id});
+  //   });
+  //   setProductList(products);
+  //   console.log(productList);
+  // }
+
+  // useEffect(() => {
+  //   getProducts();
+  // }, []);
 
   // ticketList way
   // useEffect(() => {
   //   const unSubscribe = onSnapshot(
-  //     collection(db, "products"),
+  //     collection(db, "test"),
   //     (collectionSnapshot) => {
   //       const products = [];
   //       collectionSnapshot.forEach((doc) => {
   //         products.push({
-  //           ...doc.data(),
+  //           ... doc.data(),
   //           id: doc.id
   //         });
   //       });
-  //       setProducts(products);
+  //       setProductList(products);
+  //     },
+  //     (error) => {
+  //       setError(error.message);
   //     }
   //   );
   //   return () => unSubscribe();
@@ -51,15 +67,17 @@ export default function Products() {
 
   return (
     <>
-    <div>
-    {products.map((product) => {
+    {/* <div>
+    {productList.map((product) => {
       <Product
         key={product.id}
         name={product.name}
         description={product.description}
       />
     })}
-    </div>
+    </div> */}
     </>
   );
 }
+
+export default Products;
