@@ -3,28 +3,30 @@
 import React, { useEffect, useState } from "react";
 import db from './../firebase.js';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc, getDocs }  from "firebase/firestore";
-import { useFirestore, useFirestoreCollectionData } from 'reactfire';
+// import products from '../products';
 
-
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
+const products = [{
+  name: "product name",
+  img: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+  price: "12.99",
+  description: "a cat.",
+  id: 1,
+  key: 1
+},
+{
+  name: "product name",
+  img: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+  price: "12.99",
+  description: "a cat.",
+  id: 2,
+  key: 2
+},
+]
 
 function Products() {
 
-  const [productList, setProductList] = useState([]);
+  const [productList, setProductList] = useState(null);
   // const [selectedProduct, setSelectedProduct] = useState(null);
-
-    // reactfire function to get our firestore instance
-    const firestore = useFirestore();
-    const testCollection = collection(firestore, 'test');
-
-    // use reactfire hook useFirestoreCollectionData to get our collection and deconstruct into data variable
-    const { status, data } = useFirestoreCollectionData(testCollection, { idField: 'id' });
-
-    if (status === 'loading') {
-      return <p>Loading...</p>;
-    }
-
-    console.log(data);
 
 
   // const getProducts = async () => {
@@ -43,40 +45,21 @@ function Products() {
   // useEffect(() => {
   //   getProducts();
   // }, []);
+  useEffect(() => {
+    setProductList(products);
+    console.log(productList)
+  }, []);
 
-  // ticketList way
-  // useEffect(() => {
-  //   const unSubscribe = onSnapshot(
-  //     collection(db, "test"),
-  //     (collectionSnapshot) => {
-  //       const products = [];
-  //       collectionSnapshot.forEach((doc) => {
-  //         products.push({
-  //           ... doc.data(),
-  //           id: doc.id
-  //         });
-  //       });
-  //       setProductList(products);
-  //     },
-  //     (error) => {
-  //       setError(error.message);
-  //     }
-  //   );
-  //   return () => unSubscribe();
-  // }, []);
 
   return (
-    <>
-    {/* <div>
-    {productList.map((product) => {
-      <Product
-        key={product.id}
-        name={product.name}
-        description={product.description}
-      />
-    })}
-    </div> */}
-    </>
+    <div>
+    {products.map((product) => (
+      <div key={product.key}>
+        {product.name}
+      </div>
+    )
+    )}
+    </div>
   );
 }
 

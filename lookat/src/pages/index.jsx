@@ -18,8 +18,10 @@ export default function Page() {
 
 Page.getLayout = function getLayout(page) {
   return (
+    <FirebaseAppProvider firebaseConfig={firebaseConfig}>
       <Layout>
         {page}
       </Layout>
+    </FirebaseAppProvider>
   )
 }
