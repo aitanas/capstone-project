@@ -10,8 +10,14 @@ export default function Page() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <p>index.jsx</p>
+      <div className="columns-2 gap-8">
+        <div>
+          <h1 className="text-5xl">Welcome to Lookat</h1>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsam atque quae ad dolor corrupti officiis voluptatum ex magnam. Deleniti hic eum delectus optio fuga similique, neque tempore dolorem voluptates.</p>
+        </div>
+      </div>
     </div>
   );
 }
