@@ -3,17 +3,17 @@ import Footer from './Footer';
 
 export default function Layout({ children }) {
 
-  const layoutStyles = {
-
-  }
-
   return (
-    <div className="container my-0">
+    <>
       <Navbar />
-      <main>
-        {children}
-      </main>
+        <div className="bg-ivory">
+          <div className="container relative">
+            <main>
+              {children}
+            </main>
+          </div>
+        </div>
       <Footer />
-    </div>
+    </>
   )
 }
