@@ -1,11 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import Portrait from './../assets/natalie-portrait.png';
 
 export default function About() {
   return (
-    <>
-      <p>About component</p>
-      <Link href="/">Back to home</Link>
-    </>
+    <div className="columns-2">
+      <div>
+        <Image
+          src={Portrait}
+          width="300"
+          className=""
+          />
+      </div>
+    </div>
     
   )
 }
