@@ -14,7 +14,7 @@ export default function About() {
       </div>
       <div>
         <h1 className="text-5xl">About</h1>
-        <p>Natalie is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum pariatur incidunt et explicabo amet blanditiis, ea illum architecto quam odio, officiis dolor mollitia expedita! Reiciendis eum quos corrupti eaque!</p>
+        <p>Natalie is a lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum pariatur incidunt et explicabo amet blanditiis, ea illum architecto quam odio, officiis dolor mollitia expedita! Reiciendis eum quos corrupti eaque!</p>
       </div>
     </div>
     
