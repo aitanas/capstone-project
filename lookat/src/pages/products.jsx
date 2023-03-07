@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Product from "./[product]/detail.jsx";
+import Product from "./product/[id].jsx";
 import Image from 'next/image';
 import Link from 'next/link';
 import db from './../firebase.js';
@@ -34,4 +34,18 @@ export default function Products() {
     </div>
     </>
   );
+}
+
+export function getAllProductIds() {
+  return products.map((product) => {
+    return {
+      params: {
+        id: JSON.stringify(product.id)
+      }
+    }
+  })
+}
+
+export function getProductData(id) {
+  return products.filter(product => product.id === id);
 }
