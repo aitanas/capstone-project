@@ -35,7 +35,6 @@ function Products() {
     
   //   console.log(collectionArray);
   //   collectionArray.forEach((doc) => {
-  //     // console.log(doc.id, " => ", doc.data());
   //     products.push({... doc.data(), id: doc.id});
   //   });
   //   setProductList(products);

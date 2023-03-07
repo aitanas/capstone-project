@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div>
       <h1 className="text-2xl font-bold mx-4">Natalie Shough</h1>
-      <div>
+      <div class="flex justify-between">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/portfolio">Portfolio</Link>
