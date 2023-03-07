@@ -1,13 +1,16 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
+import Image from 'next/image';
 import db from './../firebase.js';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc, getDocs }  from "firebase/firestore";
+import Backpack from './../assets/photos/backpack.png'
+import Bem from './../assets/photos/Bem.png'
 // import products from '../products';
 
 const products = [{
   name: "product name",
-  img: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+  img: {Backpack},
   price: "12.99",
   description: "a cat.",
   id: 1,
@@ -15,7 +18,7 @@ const products = [{
 },
 {
   name: "product name",
-  img: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+  img: {Bem},
   price: "12.99",
   description: "a cat.",
   id: 2,
@@ -23,7 +26,7 @@ const products = [{
 },
 ]
 
-function Products() {
+export default function Products() {
 
   const [productList, setProductList] = useState(null);
   // const [selectedProduct, setSelectedProduct] = useState(null);
@@ -51,15 +54,22 @@ function Products() {
 
 
   return (
-    <div>
+    <div className="grid-cols-3">
     {products.map((product) => (
-      <div key={product.key}>
-        {product.name}
+      <div key={product.key} class="max-w-sm rounded overflow-hidden shadow-lg">
+        <Image 
+          src={product.img}
+          className="w-full"
+        />
+        <div class="font-bold text-xl mb-2">
+          {product.name} / {product.price}
+        </div>
+        <p class="text-gray-700 text-base">
+          {product.description}
+        </p>
       </div>
     )
     )}
     </div>
   );
 }
-
-export default Products;

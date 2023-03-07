@@ -5,15 +5,17 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <Navbar />
-        <div className="bg-ivory">
-          <div className="container relative">
-            <main>
-              {children}
-            </main>
+      <div className="relative">
+        <Navbar />
+          <div className="bg-ivory box-border">
+            <div className="">
+              <main>
+                {children}
+              </main>
+            </div>
           </div>
-        </div>
-      <Footer />
+        <Footer />
+      </div>
     </>
   )
 }
