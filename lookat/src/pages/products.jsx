@@ -4,25 +4,32 @@ import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import db from './../firebase.js';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc, getDocs }  from "firebase/firestore";
-import Backpack from './../assets/photos/backpack.png'
-import Bem from './../assets/photos/Bem.png'
+
 // import products from '../products';
 
 const products = [{
-  name: "product name",
-  img: {Backpack},
-  price: "12.99",
+  name: "Mascot Plush",
+  img: '/images/bem.png',
+  price: "17.99",
   description: "a cat.",
   id: 1,
   key: 1
 },
 {
-  name: "product name",
-  img: {Bem},
+  name: "Luggage Tag",
+  img: '/images/backpack.png',
   price: "12.99",
   description: "a cat.",
   id: 2,
   key: 2
+},
+{
+  name: "Luggage Tag",
+  img: '/images/tag.png',
+  price: "12.99",
+  description: "a cat.",
+  id: 3,
+  key: 3
 },
 ]
 
@@ -31,22 +38,6 @@ export default function Products() {
   const [productList, setProductList] = useState(null);
   // const [selectedProduct, setSelectedProduct] = useState(null);
 
-
-  // const getProducts = async () => {
-  //   let products = [];
-  //   const collectionArray = await getDocs(collection(db, "test"));
-    
-  //   console.log(collectionArray);
-  //   collectionArray.forEach((doc) => {
-  //     products.push({... doc.data(), id: doc.id});
-  //   });
-  //   setProductList(products);
-  //   console.log(productList);
-  // }
-
-  // useEffect(() => {
-  //   getProducts();
-  // }, []);
   useEffect(() => {
     setProductList(products);
     console.log(productList)
@@ -54,22 +45,27 @@ export default function Products() {
 
 
   return (
-    <div className="grid-cols-3">
+    <>
+    <div className="flex grid-cols-3 gap-8 justify-evenly">
     {products.map((product) => (
       <div key={product.key} class="max-w-sm rounded overflow-hidden shadow-lg">
         <Image 
           src={product.img}
           className="w-full"
+          width="200"
+          height="200"
+          alt={product.name}
         />
-        <div class="font-bold text-xl mb-2">
-          {product.name} / {product.price}
-        </div>
-        <p class="text-gray-700 text-base">
-          {product.description}
+        <p class="font-bold text-xl mb-2 text-center">
+          {product.name}
+        </p>
+        <p class="text-gray-700 text-base text-center">
+          {product.price}
         </p>
       </div>
     )
     )}
     </div>
+    </>
   );
 }

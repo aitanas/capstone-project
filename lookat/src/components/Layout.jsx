@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <div className="relative">
         <Navbar />
-          <div className="bg-ivory box-border">
+          <div className="bg-white box-border">
             <div className="">
               <main>
                 {children}
