@@ -7,11 +7,11 @@ export default function Page() {
   return (
     <div>
       <Head>
-        <title>Natalie Shough</title>
+        <title>Lookat by Natalie Shough</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="columns-2 gap-8">
+      <div className="columns-2 gap-8 h-screen justify-items-center">
         <div className="overflow-hidden">
           <Image
             src={Bem}
@@ -19,7 +19,7 @@ export default function Page() {
             className="object-fill"
           />
         </div>
-        <div>
+        <div className="">
           <h1 className="text-5xl">Welcome to Lookat</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsam
