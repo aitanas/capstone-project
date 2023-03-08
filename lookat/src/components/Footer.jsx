@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "./../assets/lookat-logo.png"
+import Logo from "./../assets/lookat-logo.png";
 
 export default function Footer() {
-
   const navLink = "nav hover:text-orange-dark";
 
   return (
@@ -12,9 +11,9 @@ export default function Footer() {
         <div>
           <Link href="/">
             <Image
-            src={Logo}
-            className="sm:shrink-1 mt-2 object-bottom"
-            width="100"
+              src={Logo}
+              className="sm:shrink-1 mt-2 object-bottom"
+              width="100"
             />
           </Link>
         </div>
@@ -26,12 +25,17 @@ export default function Footer() {
         </div>
         <div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <p>Facilis sunt hic nobis similique sit itaque tenetur temporibus nesciunt officiis.</p>
+          <p>
+            Facilis sunt hic nobis similique sit itaque tenetur temporibus
+            nesciunt officiis.
+          </p>
         </div>
       </div>
       <div className="text-center">
-        <p>Made with 🧡 by <strong>Aitana Shough</strong></p>
+        <p>
+          Made with 🧡 by <strong>Aitana Shough</strong>
+        </p>
       </div>
     </div>
-  )
+  );
 }
