@@ -9,7 +9,7 @@ export default function About() {
         <Image
           src={Portrait}
           width="300"
-          className="w-full aspect-auto"
+          className="w-full aspect-auto rounded-lg  ring-ivory ring-4"
           />
       </div>
       <div className="content-center">

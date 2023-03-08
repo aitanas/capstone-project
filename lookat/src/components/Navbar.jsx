@@ -4,11 +4,13 @@ import Logo from "./../assets/lookat-text-logo.png"
 
 export default function Navbar() {
 
+  const navLink = "mt-2 nav hover:text-orange-light";
+
   return (
     <div className="bg-green text-ivory px-10 sticky top-0 inset-x-0 border-b-1 border-brown box-border my-0">
       <div className="flex container justify-between my-0 h-20 items-center sticky object-top inset-x-0 gap-0">
-        <Link href="/" className="mt-2">Home</Link>
-        <Link href="/about" className="mt-2">About</Link>
+        <Link href="/" className={navLink}>Home</Link>
+        <Link href="/about" className={navLink}>About</Link>
         <Link href="/">
           <Image 
           src={Logo}
@@ -16,8 +18,8 @@ export default function Navbar() {
           width="200"
           />
         </Link>
-        <Link href="/portfolio" className="mt-2">Portfolio</Link>
-        <Link href="/products" className="mt-2">Products</Link>
+        <Link href="/portfolio" className={navLink}>Portfolio</Link>
+        <Link href="/products" className={navLink}>Products</Link>
       </div>
     </div>
   )

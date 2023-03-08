@@ -22,9 +22,14 @@ export default function Layout({ children }) {
           font-family: ${fraunces.style.fontFamily};
           font-weight: 700;
         }
+
+        .nav {
+          font-weight: 700;
+          text-transform: lowercase;
+        }
       `}
       </style>
-      
+
       <div className={`${lexend.className}`}>
         <Navbar />
           <div className="bg-white box-border">

@@ -7,19 +7,19 @@ export default function Products() {
     <>
     <div className="flex grid-cols-3 gap-8 justify-evenly">
     {products.map((product) => (
-      <div key={product.key} class="max-w-sm rounded overflow-hidden shadow-lg">
+      <div key={product.key} class="group max-w-sm rounded-lg overflow-hidden shadow-lg bg-stonewash hover:bg-orange-dark">
         <Link href={`/product/${product.id}`}>
           <Image 
             src={product.img}
-            className="w-full"
+            className="w-full ring-white ring-4"
             width="200"
             height="200"
             alt={product.name}
           />
-          <p className="font-bold text-xl mb-2 text-center">
+          <p className="font-bold text-xl mb-1 text-center group-hover:text-ivory mt-2 text-brown">
             {product.name}
           </p>
-          <p className="text-gray-700 text-base text-center">
+          <p className="text-gray-700 text-base text-center group-hover:text-white mb-1 text-brown">
             {product.price}
           </p>
         </Link>
