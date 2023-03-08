@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function ProductDetail({ product }) {
 
-
   return (
     <div>
       <Image
@@ -31,7 +30,7 @@ export async function getStaticProps({ params }) {
   const product = getProductData(params.id);
   return {
     props: {
-      product,
+      product
     },
   };
 }

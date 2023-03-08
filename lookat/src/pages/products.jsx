@@ -21,10 +21,10 @@ export default function Products() {
             height="200"
             alt={product.name}
           />
-          <p class="font-bold text-xl mb-2 text-center">
+          <p className="font-bold text-xl mb-2 text-center">
             {product.name}
           </p>
-          <p class="text-gray-700 text-base text-center">
+          <p className="text-gray-700 text-base text-center">
             {product.price}
           </p>
         </Link>
@@ -40,12 +40,12 @@ export function getAllProductIds() {
   return products.map((product) => {
     return {
       params: {
-        id: JSON.stringify(product.id)
-      }
-    }
+        id: product.id
+      },
+    };
   })
 }
 
 export function getProductData(id) {
-  return products.filter(product => product.id === id);
+  return products.filter(product => product.id === id)[0];
 }
