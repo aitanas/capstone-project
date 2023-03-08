@@ -40,6 +40,8 @@ export default function Layout({ children }) {
       `}
       </style>
 
+      <motion.div layout transition={{ duration: 0.3 }} />
+
       <div className={`${lexend.className}`}>
         <Navbar />
           <div className="bg-white box-border">

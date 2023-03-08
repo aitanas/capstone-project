@@ -1,10 +1,11 @@
 import './../styles/globals.css'
+import './../styles/transition.css'
 import Layout from '../components/Layout'
 import { AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from "react"
 import Router from "next/router"
 import PageLoader from 'next/dist/client/page-loader'
-
+import Transition from '../components/Transition'
 
 export default function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -28,10 +29,15 @@ export default function MyApp({ Component, pageProps }) {
     // <AnimatePresence mode="wait" initial={false}>
       
       <Layout>
+        <Transition>
         <p>Loading...</p>
+        </Transition>
       </Layout> : 
       <Layout>
+        <Transition>
         <Component {...pageProps} />
+        </Transition>
       </Layout>
+
     // </AnimatePresence>
 }
