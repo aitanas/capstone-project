@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Product from "./product/[id].jsx";
 import Image from 'next/image';
 import Link from 'next/link';
-import db from './../firebase.js';
-import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc, getDocs }  from "firebase/firestore";
 import products from '../productData';
 
 export default function Products() {
-
   return (
     <>
     <div className="flex grid-cols-3 gap-8 justify-evenly">

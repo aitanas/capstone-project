@@ -5,8 +5,8 @@ import Logo from "./../assets/lookat-text-logo.png"
 export default function Navbar() {
 
   return (
-    <div className="bg-green text-ivory px-10 sticky top-0 inset-x-0 border-b-1 border-brown box-border">
-      <div className="flex container justify-between my-6 h-20 items-center sticky object-top inset-x-0 gap-0">
+    <div className="bg-green text-ivory px-10 sticky top-0 inset-x-0 border-b-1 border-brown box-border my-0">
+      <div className="flex container justify-between my-0 h-20 items-center sticky object-top inset-x-0 gap-0">
         <Link href="/" className="mt-2">Home</Link>
         <Link href="/about" className="mt-2">About</Link>
         <Link href="/">

@@ -4,7 +4,7 @@ import Logo from "./../assets/lookat-logo.png"
 
 export default function Footer() {
   return (
-    <div className="bg-stonewash text-ivory px-10 relative inset-x-0 bottom-0 box-border">
+    <div className="bg-stonewash text-ivory px-10 relative inset-x-0 bottom-0 box-border py-4">
       <div className="flex container justify-between my-6 h-22 items-center columns-3">
         <div>
           <Link href="/">
@@ -19,7 +19,6 @@ export default function Footer() {
           <ul>
             <li>Link 1</li>
             <li>Link 2</li>
-            <li>Link 3</li>
           </ul>
         </div>
         <div>
