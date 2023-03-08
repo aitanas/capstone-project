@@ -1,8 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Fraunces } from "@next/font/google";
-import { Lexend } from "@next/font/google";
-import { motion } from "framer-motion";
+import { Fraunces, Lexend, Unbounded } from "@next/font/google";
 
 const fraunces = Fraunces({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -14,13 +12,17 @@ const lexend = Lexend({
   subsets: ["latin"],
 });
 
+const unbounded = Unbounded({
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
 export default function Layout({ children }) {
   return (
     <>
       <style jsx global>
         {`
           h1 {
-            font-family: ${fraunces.style.fontFamily};
             font-weight: 700;
             color: #92381b;
             margin-bottom: 1rem;
@@ -34,18 +36,17 @@ export default function Layout({ children }) {
           }
 
           html {
+            font-family: ${lexend.style.fontFamily};
             font-weight: 400;
             color: #200502;
           }
         `}
       </style>
 
-      <motion.div layout transition={{ duration: 0.3 }} />
-
-      <div className={`${lexend.className}`}>
+      <div className="bg-white">
         <Navbar />
-        <div className="bg-white box-border">
-          <div className="container h-screen pt-6">
+        <div className="box-border">
+          <div className="container pt-6">
             <main>{children}</main>
           </div>
         </div>

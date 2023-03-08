@@ -5,16 +5,16 @@ import products from "../productData";
 export default function Products() {
   return (
     <>
-      <div className="flex grid-cols-3 gap-8 justify-evenly">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-evenly">
         {products.map((product) => (
           <div
             key={product.key}
-            class="group max-w-sm rounded-lg overflow-hidden shadow-lg bg-stonewash hover:bg-orange-dark"
+            class="group max-w-sm rounded-lg overflow-hidden shadow-lg bg-stonewash hover:bg-orange-dark ring-ivory ring-2 ring-offset-2"
           >
             <Link href={`/product/${product.id}`}>
               <Image
                 src={product.img}
-                className="w-full ring-white ring-4"
+                className="w-full shadow-md brightness-90 group-hover:brightness-100 overflow-clip"
                 width="200"
                 height="200"
                 alt={product.name}

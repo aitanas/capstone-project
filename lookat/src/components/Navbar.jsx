@@ -6,7 +6,7 @@ export default function Navbar() {
   const navLink = "mt-2 nav hover:text-orange-light";
 
   return (
-    <div className="bg-green text-ivory px-10 sticky top-0 inset-x-0 border-b-1 border-brown box-border my-0">
+    <div className="bg-green text-ivory px-10 sticky top-0 inset-x-0 border-b-1 border-brown box-border my-0 shadow-lg">
       <div className="flex container justify-between my-0 h-20 items-center sticky object-top inset-x-0 gap-0">
         <Link href="/" className={navLink}>
           Home

@@ -6,7 +6,7 @@ export default function Footer() {
   const navLink = "nav hover:text-orange-dark";
 
   return (
-    <div className="bg-stonewash text-ivory px-10 relative inset-x-0 bottom-0 box-border py-4">
+    <div className="bg-stonewash text-ivory px-10 relative inset-x-0 bottom-0 box-border py-4 mt-10">
       <div className="flex container justify-between my-6 h-20 items-center columns-3">
         <div>
           <Link href="/">

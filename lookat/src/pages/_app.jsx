@@ -6,9 +6,9 @@ import Transition from "../components/Transition";
 export default function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Transition>
+      {/* <Transition> */}
         <Component {...pageProps} />
-      </Transition>
+      {/* </Transition> */}
     </Layout>
   );
 }
