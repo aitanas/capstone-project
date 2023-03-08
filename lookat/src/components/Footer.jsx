@@ -3,9 +3,12 @@ import Image from "next/image";
 import Logo from "./../assets/lookat-logo.png"
 
 export default function Footer() {
+
+  const navLink = "nav hover:text-orange-dark";
+
   return (
     <div className="bg-stonewash text-ivory px-10 relative inset-x-0 bottom-0 box-border py-4">
-      <div className="flex container justify-between my-6 h-22 items-center columns-3">
+      <div className="flex container justify-between my-6 h-20 items-center columns-3">
         <div>
           <Link href="/">
             <Image
@@ -16,9 +19,9 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
+          <ul className="leading-relaxed">
+            <li className={navLink}>Link 1</li>
+            <li className={navLink}>Link 2</li>
           </ul>
         </div>
         <div>
@@ -27,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center">
-        <p>Made with love by <strong>Aitana Shough</strong></p>
+        <p>Made with 🧡 by <strong>Aitana Shough</strong></p>
       </div>
     </div>
   )

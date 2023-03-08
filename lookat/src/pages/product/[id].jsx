@@ -5,18 +5,18 @@ import Image from "next/image";
 export default function ProductDetail({ product }) {
 
   return (
-    <div className="flex columns-2">
-      <div>
+    <div className="flex-initial-screen columns-2 content-center items-stretch gap-x-8">
+      <div className="">
         <Image
           src={product.img}
           height="200"
-          width="400"
+          width="575"
           alt={product.name}
-          className="align-self-center"
+          className="align-self-center rounded-lg ring-ivory ring-4 ring-offset-4 my-2"
           />
       </div>
       <div>
-        <div className="block p-1">
+        <div className="block p-1 items-center">
           <h1 className="text-4xl">{product.name}</h1>
           <h2 className="text-xl">{product.price}</h2>
         </div>
