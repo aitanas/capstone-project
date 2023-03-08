@@ -1,9 +1,15 @@
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { DM_Sans } from '@next/font/google'
+import { Fraunces } from '@next/font/google';
+import { Lexend } from '@next/font/google';
 
-const dmSans = DM_Sans({ 
-  weight: ['400', '500', '700'],
+const fraunces = Fraunces({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin']
+})
+
+const lexend = Lexend({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin']
 })
 
@@ -11,7 +17,15 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <div className={`${dmSans.className}`}>
+      <style jsx global>{`
+        h1 {
+          font-family: ${fraunces.style.fontFamily};
+          font-weight: 700;
+        }
+      `}
+      </style>
+      
+      <div className={`${lexend.className}`}>
         <Navbar />
           <div className="bg-white box-border">
             <div className="container h-screen pt-6">
