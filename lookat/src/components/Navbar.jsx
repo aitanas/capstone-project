@@ -3,7 +3,7 @@ import Image from "next/image";
 import Logo from "./../assets/lookat-text-logo.png";
 
 export default function Navbar() {
-  const navLink = "mt-2 nav hover:text-orange-light";
+  const navLink = "mt-2 nav hover:text-white hover:text-decoration hover:decoration-offset-2 transition-colors";
 
   return (
     <div className="bg-green text-ivory px-10 sticky top-0 inset-x-0 border-b-1 border-brown box-border my-0 shadow-lg">
@@ -21,7 +21,7 @@ export default function Navbar() {
           Portfolio
         </Link>
         <Link href="/products" className={navLink}>
-          Products
+          Shop
         </Link>
       </div>
     </div>

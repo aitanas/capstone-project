@@ -9,7 +9,7 @@ export default function Products() {
         {products.map((product) => (
           <div
             key={product.key}
-            class="group max-w-sm rounded-lg overflow-hidden shadow-lg bg-stonewash hover:bg-orange-dark ring-ivory ring-2 ring-offset-2"
+            class="group max-w-sm rounded-lg overflow-hidden shadow-lg bg-stonewash hover:bg-orange-dark ring-ivory ring-2 ring-offset-2 transition"
           >
             <Link href={`/product/${product.id}`}>
               <Image

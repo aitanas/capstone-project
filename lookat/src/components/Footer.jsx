@@ -3,7 +3,7 @@ import Image from "next/image";
 import Logo from "./../assets/lookat-logo.png";
 
 export default function Footer() {
-  const navLink = "nav hover:text-orange-dark";
+  const navLink = "nav hover:text-orange-dark transition-colors";
 
   return (
     <div className="bg-stonewash text-ivory px-10 relative inset-x-0 bottom-0 box-border py-4 mt-10">
