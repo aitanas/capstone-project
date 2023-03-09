@@ -4,18 +4,17 @@ import portfolioPieces from "../portfolioData";
 
 export default function Portfolio() {
   // code for portfolio image hover
-  // const [isHovering, setIsHovered] = useState(false);
-  // const onMouseEnter = () => setIsHovered(true);
-  // const onMouseLeave = () => setIsHovered(false);
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
 
-  const [isHovering, setIsHovered] = useState(portfolioPieces);
 
-  const onPieceHover = (key, isHovering) => {
-    setIsHovered(() => {
-      return portfolioPieces.filter((piece) => piece.key === key)[0]
-        }
-      );
-    };
+  // const onPieceHover = (key, isHovering) => {
+  //   setIsHovered(() => {
+  //     return portfolioPieces.filter((piece) => piece.key === key)[0]
+  //       }
+  //     );
+  //   };
   //products.filter((product) => product.id === id)[0];
 
   return (
@@ -27,8 +26,8 @@ export default function Portfolio() {
             <div
               key={piece.key}
               className="max-w-sm overflow-hidden w-full h-full"
-              onMouseEnter={() => onPieceHover(piece.key, true)}
-              onMouseLeave={() => onPieceHover(piece.key, false)}
+              // onMouseEnter={() => onMouseEnter}
+              // onMouseLeave={() => onMouseLeave}
             >
               {piece.isHovering ? (
                 <Image

@@ -1,21 +1,12 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Fraunces, Lexend, Unbounded } from "@next/font/google";
-
-const fraunces = Fraunces({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+import { Lexend } from "@next/font/google";
 
 const lexend = Lexend({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
-const unbounded = Unbounded({
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 
 export default function Layout({ children }) {
   return (
@@ -42,7 +33,6 @@ export default function Layout({ children }) {
           }
         `}
       </style>
-      <html className="scroll-smooth">
         <div className="bg-white">
           <Navbar />
           <div className="box-border container z-1">
@@ -52,7 +42,6 @@ export default function Layout({ children }) {
           </div>
           <Footer />
         </div>
-      </html>
     </>
   );
 }

@@ -6,10 +6,10 @@ import Logo from "./../assets/nas-01.svg";
 export default function About() {
   return (
     <div className="columns-2 gap-8 mt-6">
-      <header className="text-center">
+      <div className="text-center">
           <Image src={Logo} className="sm:shrink-1 my-2 item-center mx-auto" width="150" />
           <h1 className="text-4xl">Natalie Ann Shough</h1>
-      </header>
+      </div>
       <p className="my-4">
         <strong>Natalie</strong> is a designer and creative based in the city of
         Portland, Oregon. With a passion for visual storytelling and a keen eye

@@ -1,7 +1,7 @@
 import "./../styles/globals.css";
 import "./../styles/transition.css";
 import Layout from "../components/Layout";
-import Transition from "../components/Transition";
+// import Transition from "../components/Transition";
 
 export default function MyApp({ Component, pageProps }) {
   

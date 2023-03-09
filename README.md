@@ -3,7 +3,6 @@
 ## Epicodus Capstone
 # Design Portfolio and Store
 
-
 React website serving as a portfolio and online store for graphic designer and illustrator Natalie Shough and her personal brand, Lookat.
 
 ## Navigation

@@ -21,14 +21,12 @@ export default function Page() {
             atque quae ad dolor corrupti officiis voluptatum ex magnam. Deleniti
             hic eum delectus optio fuga similique, neque tempore dolorem
             voluptates.
-            <br />
-            <br />
+            <br /><br />
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsam
             atque quae ad dolor corrupti officiis voluptatum ex magnam. Deleniti
             hic eum delectus optio fuga similique, neque tempore dolorem
             voluptates.
-            <br />
-            <br />
+            <br /><br />
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsam
             atque quae ad dolor corrupti officiis voluptatum ex magnam. Deleniti
             hic eum delectus optio fuga similique, neque tempore dolorem
