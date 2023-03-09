@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import Deer from "./../../public/images/TH2-deer.png"
+import Deer from "./../../public/images/portfolio/TH2-deer.png"
 
 export default function Page() {
 
