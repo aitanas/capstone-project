@@ -1,7 +1,7 @@
 const products = [
   {
     name: "Cowboy Chickens Sticker Sheet",
-    img: "/images/chicken-stickers.png",
+    img: "/images/product/chicken-stickers.png",
     price: "8.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
@@ -10,7 +10,7 @@ const products = [
   },
   {
     name: "Toilet Kendama Boy Sticker",
-    img: "/images/kendamaboy1.png",
+    img: "/images/product/kendamaboy1.png",
     price: "3.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     name: "Bikini Bugs Sticker Sheet",
-    img: "/images/bug-stickers.png",
+    img: "/images/product/bug-stickers.png",
     price: "5.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
@@ -28,7 +28,7 @@ const products = [
   },
   {
     name: "Kendama Boy Sticker",
-    img: "/images/kendamaboy2.png",
+    img: "/images/product/kendamaboy2.png",
     price: "3.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
