@@ -1,21 +1,46 @@
 ![Lookat logo](/img/Lookat-logo-03.svg)
 
-## Capstone Project: Design Portfolio and Store
+## Epicodus Capstone
+# Design Portfolio and Store
+
 
 React website serving as a portfolio and online store for graphic designer and illustrator Natalie Shough and her personal brand, Lookat.
 
-[Technologies Used](#technologies-used)
-[Objectives](#objectives)
-[Component Diagram](#component-diagram)
-[Initial Mockups](#site-mockups)
-[Research Log](#research--planning-log)
+## Navigation
+
+»	[Technologies Used](#technologies-used)
+
+»	[Objectives](#objectives)
+
+»	[Component Diagram](#component-diagram)
+
+»	[Initial Mockups](#site-mockups)
+
+»	[Setup & Installation](#setup--installation)
+
+»	[Known Bugs](#known-bugs)
+
+»	[Research Log](#research--planning-log)
+
+»	[Thanks](#thank-you)
+
+»	[License](#license)
+
+
+---
+
 
 ## Technologies Used
 
+* React
+* Next.js
+* JavaScript / JSX
+* Tailwind CSS
+* TypeScript
 
 ## Objectives
 
-### MVP
+### Minimum Viable Product
 
 Styled splash page with links to **Portfolio**, **Products**, and **About** sections. Each section will be broken out as follows:
 
@@ -23,19 +48,35 @@ Styled splash page with links to **Portfolio**, **Products**, and **About** sect
 * Blurb about the brand, Lookat
 * Blurb about the designer, Natalie
 * Links to relevant social media sites
-* Contact form (routed directly to designer's email)
 
 #### Portfolio
-* Designer's resume
 * Photos and examples of illustration / design work
+* Designer's resume
 
 #### Products
 * List of products
 * Read functionality (Detail for each product)
 
 
-
 ### Stretch Goals
+
+#### Overall
+* Utilize Tailwind CSS for site styling
+* Add sleek, responsive animation throughout site while user scrolls/navigates
+* Ensure site adheres to [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) guidelines
+
+#### Portfolio
+
+* Add responsive JavaScript and CSS to spruce up portfolio works with content details appearing on hover, etc.
+* Add CRUD functionality for portfolio works
+* Contact form (routed directly to designer's email)
+
+#### Products
+
+* Full CRUD functionality
+* Add authorization and authentication: only authenticated users may utilize Create, Update, and Delete functionality
+* Add Stripe API functionality to allow users to purchase products directly from the website
+* Add a NoSQL database to store products and sales information
 
 
 ## Component Diagram
@@ -48,6 +89,24 @@ Styled splash page with links to **Portfolio**, **Products**, and **About** sect
 
 ![Product page mockups](/img/product-mockup.png)
 
+
+## Setup & Installation
+
+1. Clone this repository to your workspace.
+```
+$ git clone https://github.com/aitanas/capstone-project.git
+```
+2. While in the root folder, navigate to the `lookat` directory.
+3. Install packages and dependencies with `npm i` or `npm install`.
+4. Build the project in development mode in your localhost:3000 server.
+```
+$ npm run dev
+```
+5. Enjoy!
+
+## Known Bugs
+* Transitions do not work on the second load-through -- likely a decpreciation issue; needs further research.
+* When scrolling down, some images clip into the navigation bar.
 
 ## Research & Planning Log
 ### Friday, 02/17
@@ -67,7 +126,7 @@ Styled splash page with links to **Portfolio**, **Products**, and **About** sect
     * WebDevSimplified has an entire video tutorial series on the Stripe API. This looks like a promising stretch goal!
 * **10:38 am** Playing with [Typescript](https://www.typescriptlang.org/play)
   * Video: (2:20) [TypeScript in 100 Seconds](https://www.youtube.com/watch?v=zQnBQ4tB3ZA&ab_channel=Fireship)
-    * TypeScript seems to be fairly easy to integrate into existing JavaScript code, just adds a lot more structure for a lot less headache. Should be able to use it from the get-go with some more reading.
+    * TypeScript seems to be fairly easy to integrate into existing JavaScript code, just adds a lot more structure for a lot less headache.
 * **11:15 am** Reading through TypeScript tutorials, taking notes on implementation within different React frameworks
   * [TypeScript for JS Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
   * [TypeScript with React](https://www.typescriptlang.org/docs/handbook/react.html)
@@ -101,3 +160,21 @@ Styled splash page with links to **Portfolio**, **Products**, and **About** sect
 * **9:15 am** Learning about state in Next.js; reading [this article](https://blog.logrocket.com/guide-state-management-next-js/)
 * **9:50 am** Jumping around [this video](https://www.youtube.com/watch?v=T63nY70eZF0&ab_channel=developedbyed) to review Next.js concepts
 * **10:25 am** Still watching above video
+
+## Thank You
+
+* Natalie, for her willingness, creativity, patience, and support
+* My fellow Epicodus cohort, for providing unending support and laughs
+* [TypeWolf](https://www.typewolf.com/) for curated font suggestions
+
+## License
+
+**MIT License**
+
+Copyright (c) 2023 Aitana Shough
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
