@@ -8,7 +8,7 @@ export default function About() {
     <div className="columns-2 gap-8 mt-6">
       <header className="text-center">
           <Image src={Logo} className="sm:shrink-1 my-2 item-center mx-auto" width="150" />
-          <h1 className="text-3xl">Natalie Ann Shough</h1>
+          <h1 className="text-4xl">Natalie Ann Shough</h1>
       </header>
       <p className="my-4">
         <strong>Natalie</strong> is a designer and creative based in the city of

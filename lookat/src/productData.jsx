@@ -9,18 +9,18 @@ const products = [
     key: 1,
   },
   {
-    name: "Bathing Suit Bugs Sticker Sheet",
-    img: "/images/bug-stickers.png",
-    price: "5.00",
+    name: "Toilet Kendama Boy Sticker",
+    img: "/images/kendamaboy1.png",
+    price: "3.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
     id: "2",
     key: 2,
   },
   {
-    name: "Toilet Kendama Boy Sticker",
-    img: "/images/kendamaboy1.png",
-    price: "3.00",
+    name: "Bikini Bugs Sticker Sheet",
+    img: "/images/bug-stickers.png",
+    price: "5.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
     id: "3",
@@ -32,7 +32,7 @@ const products = [
     price: "3.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
-    id: "1",
+    id: "4",
     key: 4,
   },
 ];

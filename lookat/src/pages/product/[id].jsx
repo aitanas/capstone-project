@@ -11,13 +11,13 @@ export default function ProductDetail({ product }) {
           height="200"
           width="400"
           alt={product.name}
-          className="align-self-center rounded-lg ring-ivory ring-4 ring-offset-4 mt-2"
+          className="align-self-center rounded-lg ring-ivory ring-4 ring-offset-4 mt-10 mb-20"
         />
       </div>
       <div className="mt-10">
         <div className="block p-1">
           <h1 className="text-4xl">{product.name}</h1>
-          <h2 className="text-xl">${product.price}</h2>
+          <h2 className="text-2xl">${product.price}</h2>
         </div>
         <p className="block bg-ivory rounded-md p-5 text-justify m-3">
           {product.description}

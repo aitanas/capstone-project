@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "./../assets/cat-logo-01.svg";
+import Logo from "./../assets/dark-cat-logo.svg";
 
 export default function Navbar() {
   const navLink = "mt-2 nav hover:text-orange-dark hover:text-decoration hover:decoration-offset-2 transition-colors block rounded-full hover:bg-ivory";
@@ -15,7 +15,7 @@ export default function Navbar() {
           About
         </Link>
         <Link href="/">
-          <Image src={Logo} className="sm:shrink-1 mt-2" width="70" />
+          <Image src={Logo} className="sm:shrink-1 my-1" width="65" />
         </Link>
         <Link href="/portfolio" className={navLink}>
           Portfolio

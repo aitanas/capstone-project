@@ -1,37 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-// import portfolioPieces from "../portfolioData";
-
-const portfolioPieces = [
-  {
-    title: "untitled",
-    img: "/images/backpack.png",
-    id: "1",
-    key: 1,
-    isHovering: false,
-  },
-  {
-    title: "untitled 2",
-    img: "/images/backpack.png",
-    id: "2",
-    key: 2,
-    isHovering: false,
-  },
-  {
-    title: "untitled",
-    img: "/images/backpack.png",
-    id: "1",
-    key: 3,
-    isHovering: false,
-  },
-  {
-    title: "untitled 2",
-    img: "/images/backpack.png",
-    id: "2",
-    key: 4,
-    isHovering: false,
-  },
-];
+import portfolioPieces from "../portfolioData";
 
 export default function Portfolio() {
   // code for portfolio image hover
@@ -51,30 +20,30 @@ export default function Portfolio() {
 
   return (
     <>
-      <h1 className="text-3xl">Portfolio</h1>
+      <h1 className="text-3xl mt-6 bg-ivory rounded-full p-4 px-8">Portfolio</h1>
       <div className="grid grid-flow-row-dense gap-4 grid-cols-2 lg:grid-cols-4">
         {portfolioPieces.map((piece) => {
           return (
             <div
               key={piece.key}
-              class="max-w-sm overflow-hidden w-full h-full"
+              className="max-w-sm overflow-hidden w-full h-full"
               onMouseEnter={() => onPieceHover(piece.key, true)}
               onMouseLeave={() => onPieceHover(piece.key, false)}
             >
               {piece.isHovering ? (
                 <Image
-                  src={piece.img}
+                  src={piece.url}
                   alt={`${piece.title} by Natalie Shough`}
-                  height="200"
-                  width="200"
+                  height="300"
+                  width="300"
                   className="sepia transition"
                 />
               ) : (
                 <Image
-                  src={piece.img}
+                  src={piece.url}
                   alt={`${piece.title} by Natalie Shough`}
-                  height="200"
-                  width="200"
+                  height="300"
+                  width="300"
                   className="transition"
                 />
               )}

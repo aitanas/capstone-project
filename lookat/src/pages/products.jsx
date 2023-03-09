@@ -5,7 +5,7 @@ import products from "../productData";
 export default function Products() {
   return (
     <>
-      <h1 className="text-3xl">Shop</h1>
+      <h1 className="text-3xl mt-6 bg-ivory rounded-full p-4 px-8">Shop</h1>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-evenly">
         {products.map((product) => (
           <div key={product.key} class="group max-w-sm overflow-hidden">
