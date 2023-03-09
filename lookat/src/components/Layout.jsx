@@ -42,16 +42,17 @@ export default function Layout({ children }) {
           }
         `}
       </style>
-
-      <div className="bg-white">
-        <Navbar />
-        <div className="box-border">
-          <div className="container pt-6">
-            <main>{children}</main>
+      <html className="scroll-smooth">
+        <div className="bg-white">
+          <Navbar />
+          <div className="box-border container z-1">
+            <div className="">
+              <main>{children}</main>
+            </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </html>
     </>
   );
 }

@@ -1,9 +1,11 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import Bem from "./../../public/images/bem2.png";
+import Deer from "./../../public/images/TH2-deer.png"
 
 export default function Page() {
+
+
   return (
     <div>
       <Head>
@@ -11,15 +13,14 @@ export default function Page() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="columns-2 gap-8 h-screen justify-items-center">
-        <div className="overflow-hidden">
+        <div className="h-screen">
           <Image
-            src={Bem}
-            alt="A photo of Lookat mascot Bem"
-            className="object-fill"
-          />
-        </div>
-        <div className="">
+            src={Deer}
+            width="300"
+            alt="Deer"
+            className="float-right"
+            />
+
           <h1 className="text-5xl">Welcome to Lookat</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsam
@@ -29,7 +30,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </div>
   );
 }
 

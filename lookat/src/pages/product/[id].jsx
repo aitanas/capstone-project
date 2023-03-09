@@ -22,7 +22,7 @@ export default function ProductDetail({ product }) {
         <p className="block bg-ivory rounded-md p-5 text-justify m-3">
           {product.description}
         </p>
-        <button className="rounded-md bg-orange-dark text-white py-2 px-5 mx-2 my-5 ring-white ring-1 hover:bg-stonewash transition-colors">Add to cart</button>
+        <button className="rounded-md bg-orange-dark text-white py-2 px-5 mx-2 my-5 ring-white ring-1 hover:bg-green transition-colors">Add to cart</button>
       </div>
     </div>
   );

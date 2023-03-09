@@ -12,7 +12,7 @@ export default function Products() {
             <Link href={`/product/${product.id}`}>
               <Image
                 src={product.img}
-                className="w-full ring-2 ring-white ring-offset-2 brightness-90 group-hover:brightness-100 rounded-sm transition"
+                className="w-full group-hover:brightness-50 rounded-sm transition"
                 height="200"
                 width="200"
                 alt={product.name}
@@ -44,3 +44,4 @@ export function getAllProductIds() {
 export function getProductData(id) {
   return products.filter((product) => product.id === id)[0];
 }
+

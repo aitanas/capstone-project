@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Transition from "../components/Transition";
 
 export default function MyApp({ Component, pageProps }) {
+  
   return (
     <Layout>
       {/* <Transition> */}
