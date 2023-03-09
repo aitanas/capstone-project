@@ -4,6 +4,51 @@
 
 React website serving as a portfolio and online store for graphic designer and illustrator Natalie Shough and her personal brand, Lookat.
 
+[Technologies Used](#technologies-used)
+[Objectives](#objectives)
+[Component Diagram](#component-diagram)
+[Initial Mockups](#site-mockups)
+[Research Log](#research--planning-log)
+
+## Technologies Used
+
+
+## Objectives
+
+### MVP
+
+Styled splash page with links to **Portfolio**, **Products**, and **About** sections. Each section will be broken out as follows:
+
+#### About
+* Blurb about the brand, Lookat
+* Blurb about the designer, Natalie
+* Links to relevant social media sites
+* Contact form (routed directly to designer's email)
+
+#### Portfolio
+* Designer's resume
+* Photos and examples of illustration / design work
+
+#### Products
+* List of products
+* Read functionality (Detail for each product)
+
+
+
+### Stretch Goals
+
+
+## Component Diagram
+![Component diagram](/img/component-diagram.png)
+
+## Site Mockups
+![Homepage mockup](/img/home-mockup.png)
+
+![Portfolio mockup](/img/portfolio-mockup.png)
+
+![Product page mockups](/img/product-mockup.png)
+
+
 ## Research & Planning Log
 ### Friday, 02/17
 * **8:15 am** begin filling out capstone proposal
@@ -56,13 +101,3 @@ React website serving as a portfolio and online store for graphic designer and i
 * **9:15 am** Learning about state in Next.js; reading [this article](https://blog.logrocket.com/guide-state-management-next-js/)
 * **9:50 am** Jumping around [this video](https://www.youtube.com/watch?v=T63nY70eZF0&ab_channel=developedbyed) to review Next.js concepts
 * **10:25 am** Still watching above video
-
-## Component Diagram
-![Component diagram](/img/component-diagram.png)
-
-## Site Mockups
-![Homepage mockup](/img/home-mockup.png)
-
-![Portfolio mockup](/img/portfolio-mockup.png)
-
-![Product page mockups](/img/product-mockup.png)
