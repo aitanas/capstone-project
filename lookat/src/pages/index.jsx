@@ -36,7 +36,7 @@ export default function Page() {
         <div>
           <Image
             src={Deer}
-            width="550"
+            width="450"
             alt="Deer"
             className="rounded-full my-4"
           />
