@@ -3,6 +3,17 @@ import { getProductData } from "../products";
 import Image from "next/image";
 
 export default function ProductDetail({ product }) {
+
+  const stockStatus = (quantity) => {
+    if (quantity === 0) {
+      return "Out of stock! :(";
+    } else if (quantity <= 3) {
+      return "Low stock";
+    } else {
+      return null;
+    }
+  }
+
   return (
     <div className="grid justify-items-center sm:grid-cols-1 md:grid-cols-2 content-center gap-x-8">
       <div className="align-self-center">
@@ -17,7 +28,8 @@ export default function ProductDetail({ product }) {
       <div className="mt-16">
         <div className="block p-1">
           <h1 className="text-4xl">{product.name}</h1>
-          <h2 className="text-2xl">${product.price}</h2>
+          <h2 className="text-2xl">${product.price} | {stockStatus(product.quantity)}</h2>
+
         </div>
         <p className="block bg-ivory rounded-md p-5 text-justify m-3">
           {product.description}

@@ -5,6 +5,7 @@ const products = [
     price: "8.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
+    quantity: 10,
     id: "1",
     key: 1,
   },
@@ -14,6 +15,7 @@ const products = [
     price: "3.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
+    quantity: 0,
     id: "2",
     key: 2,
   },
@@ -23,6 +25,7 @@ const products = [
     price: "5.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
+    quantity: 10,
     id: "3",
     key: 3,
   },
@@ -32,6 +35,7 @@ const products = [
     price: "3.00",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis iusto, dignissimos perferendis eaque tempore, ut temporibus quo fugit porro fuga enim nemo amet placeat eveniet, nihil sunt minima nobis.",
+    quantity: 10,
     id: "4",
     key: 4,
   },
