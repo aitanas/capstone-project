@@ -25,10 +25,6 @@ export default function Footer() {
         </div>
         <div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <p>
-            Facilis sunt hic nobis similique sit itaque tenetur temporibus
-            nesciunt officiis.
-          </p>
         </div>
       </div>
       <div className="text-center bg-orange-dark p-1">
