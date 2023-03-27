@@ -1,5 +1,5 @@
 import { collection, getDocs, doc } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "./../../firebase.js";
 import { useEffect, useState } from "react";
 
 export default function ProductTest() {
@@ -17,6 +17,7 @@ const getData = async () => {
 
 useEffect(() => {
   getData();
+  console.log(process.env.NEXT_PUBLIC_FIREBASE_APP_ID);
 }, []);
 
 return(
